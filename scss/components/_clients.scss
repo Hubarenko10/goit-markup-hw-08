@@ -9,17 +9,65 @@
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  @include mq(mobile-only) {
+    margin-bottom: 30px;
+  }
+  @include mq(mobile) {
+    margin-bottom: 30px;
+  }
+  @include mq(tablet) {
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
 }
 .clients-list {
-  @include mq(mobile-only){
+  @include mq(mobile-only) {
+    display: block;
+  }
+  @include mq(mobile) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .client-list-item {
+  @include mq(mobile-only) {
+    margin: auto;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  @include mq(mobile) {
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:nth-child(n-2) {
+      margin-bottom: 30px;
+    }
+  }
+  @include mq(not-desktop) {
+    &:nth-child(3n) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(2n + 2) {
+      margin-right: 30px;
+    }
+  }
+  @include mq(desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -27,15 +75,11 @@
   height: 92px;
   justify-content: center;
   align-items: center;
-    &:not(:last-child) { 
-        margin-right: 30px;
-    }
-    &:hover,
-    &:focus {
-            border-color: var(--accent-color);
-        }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
-
 
 .client-btn {
   display: flex;
@@ -44,10 +88,10 @@
   width: 100%;
   height: 100%;
   transition: border-color var(--duration) var(--timing-function);
-    &:hover .client-btn-icon,
-    &:focus .client-btn-icon {
-        fill: var(--accent-color);
-    }
+  &:hover .client-btn-icon,
+  &:focus .client-btn-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .client-btn-icon {

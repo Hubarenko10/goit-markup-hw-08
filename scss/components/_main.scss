@@ -5,7 +5,18 @@
   line-height: 1.16;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
+@include mq(mobile-only) {
+    margin-bottom: 30px;
+    }
+  @include mq(mobile) {
+    margin-bottom: 30px;
+  }
+  @include mq(tablet) {
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
   margin-left: 0;
   margin-right: 0;
 }
@@ -16,20 +27,19 @@
   @include mq(mobile-only) {
     display: none;
   }
-  @include mq (mobile){
+  @include mq(mobile) {
     display: none;
   }
   @include mq(tablet) {
     display: none;
   }
   @include mq(desktop) {
-      display:flex;
+    display: flex;
   }
- 
 }
 .main-list {
-display: flex;
-padding: 0;
+  display: flex;
+  padding: 0;
 }
 .main-list-item {
   position: relative;
