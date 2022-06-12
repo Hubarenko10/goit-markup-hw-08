@@ -33,11 +33,34 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 h1,
@@ -572,16 +595,50 @@ img {
 }
 
 .list__ben {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 767.98px) {
+  .list__ben {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .list__ben {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .list__ben {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list__ben {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .list__item {
   margin-right: 30px;
   width: 270px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .list__item {
+    margin-bottom: 30px;
+    width: 450px;
+  }
 }
 
 .list__btn {
@@ -602,6 +659,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .list__btn {
+    width: 450px;
+  }
+}
+
 .list__icon {
   width: 70px;
   height: 70px;
@@ -616,6 +679,12 @@ img {
   text-transform: uppercase;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+@media screen and (max-width: 767.98px) {
+  .list__title {
+    text-align: center;
+  }
 }
 
 .list__text {
