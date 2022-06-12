@@ -12,6 +12,9 @@
   margin-bottom: 50px;
 }
 .clients-list {
+  @include mq(mobile-only){
+    display: flex;
+  }
   display: flex;
   justify-content: center;
   align-items: center;
