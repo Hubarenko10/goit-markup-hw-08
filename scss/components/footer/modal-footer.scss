@@ -5,26 +5,36 @@
   }
   @include mq(mobile) {
     display: block;
-    margin-left: 0;
   }
-  @include mq(desktop) {
+  @include mq(tablet) {
     display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @include mq(desktop) {
     margin-left: 93px;
+    display: block;
+    text-align: left;
   }
 }
 
-.fotter-text {
-  @include mq(mobile-only) {
-    margin-bottom: 20px;
-  }
-
-  @include mq(mobile) {
-    margin-bottom: 20px;
-  }
-  display: block;
+.footer-modal-tools{
+    @include mq(tablet){
+        display: block;
+    }
 }
 
 .fotter-label {
+  @include mq(mobile-only) {
+    margin-bottom: 20px;
+  }
+  @include mq(mobile) {
+    margin-bottom: 20px;
+  }
+  @include mq(desktop){
+  }
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -38,18 +48,28 @@
 .fotter-modal-group {
   display: flex;
 }
-
+.footer-form {
+  @include mq(tablet) {
+    display: block;
+  }
+  @include mq(desktop) {
+    display: flex;
+  }
+}
 .footer-form-input {
   @include mq(mobile-only) {
     width: 100%;
-    margin-top: 0;
   }
-
   @include mq(mobile) {
     width: 100%;
-    margin-top: 0;
   }
-  width: 358px;
+  @include mq(tablet) {
+    width: 450px;
+  }
+  @include mq(desktop) {
+    width: 358px;
+  }
+
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -62,12 +82,12 @@
 }
 
 .footer-form-btn {
-@include mq(mobile){
+  @include mq(mobile) {
     margin-top: 20px;
-}
-@include mq(mobile-only){
+  }
+  @include mq(mobile-only) {
     margin-top: 20px;
-}
+  }
   padding: 0;
   font-family: 'Roboto';
   font-style: normal;
