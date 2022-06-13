@@ -881,7 +881,6 @@ img {
 }
 
 .team-list-item {
-  width: 270px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -904,7 +903,13 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .team-list-item {
+    width: 354px;
+  }
   .team-list-item:nth-child(n-2) {
+    margin-bottom: 0;
+  }
+  .team-list-item:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
   .team-list-item:nth-child(2) {
@@ -916,8 +921,14 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .team-list-item {
+    width: 270px;
+  }
   .team-list-item:not(:last-child) {
     margin-right: 30px;
+  }
+  .team-list-item:nth-child(-n+2) {
+    margin-bottom: 0;
   }
 }
 
@@ -1122,7 +1133,6 @@ img {
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
   height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1134,6 +1144,7 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .client-list-item {
+    width: 210px;
     margin: auto;
   }
   .client-list-item:not(:last-child) {
@@ -1142,6 +1153,9 @@ img {
 }
 
 @media screen and (min-width: 480px) {
+  .client-list-item {
+    width: 210px;
+  }
   .client-list-item:nth-child(2n + 1) {
     margin-right: 30px;
   }
@@ -1150,16 +1164,28 @@ img {
   }
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) {
+  .client-list-item {
+    width: 226px;
+  }
   .client-list-item:nth-child(3n) {
     margin-bottom: 30px;
   }
-  .client-list-item:nth-child(2n + 2) {
+  .client-list-item:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+  .client-list-item:nth-child(2) {
+    margin-right: 30px;
+  }
+  .client-list-item:nth-child(4) {
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .client-list-item {
+    width: 170px;
+  }
   .client-list-item:not(:last-child) {
     margin-right: 30px;
   }
@@ -1190,6 +1216,12 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .client-btn {
+    width: 100%;
+  }
+}
+
 .client-btn-icon {
   width: 106px;
   height: 60px;
@@ -1198,9 +1230,25 @@ img {
   transition: fill var(--duration) var(--timing-function);
 }
 
-.fotter-modal {
-  display: block;
-  margin-left: 93px;
+@media screen and (max-width: 767.98px) {
+  .fotter-modal {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .fotter-modal {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fotter-modal {
+    display: block;
+    margin-left: 93px;
+  }
 }
 
 .fotter-text {
@@ -1232,7 +1280,7 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-top: 20px;
-  background-color: #2F303A;
+  background-color: #2f303a;
   padding: 15px 16px;
   cursor: pointer;
   color: var(--primary-white-color);
@@ -1288,8 +1336,28 @@ img {
           align-items: baseline;
 }
 
+@media screen and (max-width: 767.98px) {
+  .foot-cont {
+    display: block;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer-left {
   margin-right: 70px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer-left {
+    margin-right: 0;
+    padding-bottom: 60px;
+  }
 }
 
 .logo {
@@ -1338,8 +1406,21 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .footer-right {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 60px;
+  }
+}
+
 .footer-title {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1354,6 +1435,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer-list-item:not(:last-child) {

@@ -1,92 +1,114 @@
 .footer {
-    background-color: var(--backround-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background-color: var(--backround-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .foot-cont {
-    display: flex;
-    align-items: baseline;
-}
-.footer-left {
-    margin-right: 70px;
-}
-.logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-    margin-right: 0;
-}
-.logo-item {
-    color: var(--primary-white-color);
-}
-.foot-info {
-    margin-top: 20px;
-}
-.address {
-    color: var(--primary-white-color);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
-.address-item {
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    &:not(:last-child) {
-            margin-bottom: 9px;
-        }
-}
-.footer-link {
-    margin-right: 0;
-    margin-bottom: 20px;
-}
-.footer-title {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primary-white-color);
-    margin-bottom: 20px;
-}
-.footer-list {
-    display: flex;
-}
-.footer-list-item:not(:last-child) {
-    margin-right: 10px;
-}
-.footer-btn {
-    padding: 0;
-    width: 44px;
-    height: 44px;
-    border-color: transparent;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: #fff;
-    display: flex;
+  @include mq(mobile-only) {
+    display: block;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    transition: background-color var(--duration) var(--timing-function);
-    &:hover,
-    &:focus {
-            background-color: var(--accent-color);
-            transition: transform var(--duration) var(--timing-function);
-        }
+  }
+  display: flex;
+  align-items: baseline;
+}
+.footer-left {
+  @include mq(mobile-only) {
+    margin-right: 0;
+    padding-bottom: 60px;
+  }
+  margin-right: 70px;
+}
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-right: 0;
+}
+.logo-item {
+  color: var(--primary-white-color);
+}
+.foot-info {
+  margin-top: 20px;
+}
+.address {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-item {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.footer-link {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+.footer-right {
+  @include mq(mobile-only) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+}
+.footer-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.footer-list {
+ @include mq(mobile-only){
+    justify-content: center;
+    align-items: center;
+    }
+  display: flex;
+}
+.footer-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-btn {
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    transition: transform var(--duration) var(--timing-function);
+  }
 }
 .footer-icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-    transition: fill var(--duration) var(--timing-function);
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: fill var(--duration) var(--timing-function);
 }
