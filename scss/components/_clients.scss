@@ -24,7 +24,9 @@
 }
 .clients-list {
   @include mq(mobile-only) {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   @include mq(mobile) {
     display: flex;
@@ -42,10 +44,12 @@
 }
 .client-list-item {
   @include mq(mobile-only) {
-    width: 210px;
-    margin: auto;
-    &:not(:last-child) {
-      margin-bottom: 15px;
+    width: calc(50% - 15px);
+    &:nth-child(2n+1){
+      margin-right: 30px;
+    }
+    &:nth-child(-n+4){
+      margin-bottom: 30px;
     }
   }
   @include mq(mobile) {

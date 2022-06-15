@@ -1097,7 +1097,14 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .clients-list {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1144,11 +1151,13 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .client-list-item {
-    width: 210px;
-    margin: auto;
+    width: calc(50% - 15px);
   }
-  .client-list-item:not(:last-child) {
-    margin-bottom: 15px;
+  .client-list-item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .client-list-item:nth-child(-n+4) {
+    margin-bottom: 30px;
   }
 }
 
