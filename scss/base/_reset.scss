@@ -11,9 +11,14 @@ ul {
     padding: 0;
 }
 a {
+    @include mq(desktop){
     color: var(--primary-text-color);
+    }
+    color: var(--accent-color);
     text-decoration: none;
 }
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
