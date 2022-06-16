@@ -27,24 +27,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 100%;
-    height: 144px;
+      width: 100%;
+     height: 144px;
     margin-bottom: 40px;
   }
   @include mq(mobile) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 100%;
+     width: 100%;
     height: 91px;
     margin-bottom: 40px;
   }
   @include mq(tablet){
     display: flex;
     justify-content: center;
-    
     height: 38px;
-    
   }
   @include mq(desktop) {
     display: flex;
@@ -96,22 +94,20 @@
 
 .image {
   @include mq(mobile) {
-    width: 100%;
-
+     width: 100%;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   } 
   @include mq(mobile-only) {
-    width: 100%;
-
+     width: 100%;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
     @include mq(tablet) {
       display: block;
-      width: 354px;
+      width: auto;
       height: 100%;
       
     }
