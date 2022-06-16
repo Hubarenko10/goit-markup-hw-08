@@ -18,13 +18,55 @@
                     <a class="navigation__logo navigation__logo-header link" href="/">
                         <span class="navigation_text--logo">Web</span>Studio
                     </a>
+                    <button class="menu-btn-open" type="button" data-menu-open>
+                        <svg class="menu-open-icon">
+                            <use href="./images/symbol-defs.svg#icon-menu_open"></use>
+                        </svg>
+                    </button>
+                    <div class="backdrop hide is-hidden" data-menu>
+                        <div class="modal">
+                            <button class="menu-btn-close" type="button" data-menu-close>
+                                <svg class="menu__svg" width="20px" height="20px">
+                                    <use href="./images/symbol-defs.svg#icon-close_icon"></use>
+                                </svg>
+                            </button>
+                            <ul class="list menu-list">
+                                <li class="menu-list-item">
+                                    <a class="menu-list-link" href="./index.html">Студия</a>
+                                </li>
+                                <li class="menu-list-item ">
+                                    <a class="menu-list-link cur-page" href="./portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="menu-list-item ">
+                                    <a class="menu-list-link" href="#contacts">Контакты</a>
+                                </li>
+                            </ul>
+                            <ul class="list contact-menu">
+                                <li class="contact-menu-item"><a class="contact-menu-link color" href="tel:+380961111111">+38
+                                        096 111 11 11</a></li>
+                                <li class="contact-menu-item"><a class="contact-menu-link"
+                                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            </ul>
+                            <ul class="list soc-menu">
+                                <li class="soc-menu-item">
+                                    <a class="soc-menu-link" href="">Instagram</a>
+        
+                                </li>
+                                <li class="soc-menu-item">
+                                    <a class="soc-menu-link" href="">Twitter</a>
+                                </li>
+                                <li class="soc-menu-item"><a class="soc-menu-link" href="">Facebook</a></li>
+                                <li class="soc-menu-item"><a class="soc-menu-link" href="">Linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <ul class="navigation__list list">
                         <li class="navigation__item navigation__item--color">
-                            <a class="navigation__link link  navigation_link-item"
+                            <a class="navigation__link link current-page current navigation_link-item"
                                 href="./index.html">Студия</a>
                         </li>
                         <li class="navigation__item navigation__item--color">
-                            <a class="navigation__link link current-page current navigation_link-item" href="./portfolio.html">Портфолио</a>
+                            <a class="navigation__link link  navigation_link-item" href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class="navigation__item navigation__item--color">
                             <a class="navigation__link link navigation_link-item" href="#contacts">Контакты</a>
@@ -39,7 +81,6 @@
                             </svg>
                             info@devstudio.com
                         </a>
-        
                     </li>
                     <li class="contact__list">
                         <a class="contact__link link" href="tel:+380961111111">
@@ -50,6 +91,7 @@
         
                     </li>
                 </ul>
+            </div>
             </div>
         </header>
     <main>
