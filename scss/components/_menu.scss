@@ -203,12 +203,12 @@
 .soc-menu {
   @include mq(mobile) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   @include mq(mobile-only) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 }

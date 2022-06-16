@@ -22,7 +22,12 @@ a {
   text-decoration: none;
 }
 img {
+  @include mq(mobile){
+    width: 100%;
+  }
+  @include mq(mobile-only){
+    width: 100%;
+  }
   display: block;
-  width: 100%;
   height: auto;
 }
