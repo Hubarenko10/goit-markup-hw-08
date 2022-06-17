@@ -228,17 +228,51 @@
 					<ul class="list main-list">
 						<li class="main-list-item">
 							<a class="main-list-item-cont" description="Десктопные приложения" href="">
-								<img src="./images/boxes/codding.jpg" alt="Пишем код" width="370" />
+								<picture>
+									<source
+									media= " (min-width: 1200px) "
+									srcset="
+									images\boxes\codding.jpg  1x,
+									images\boxes\box1-@2x-lg.jpg 2x
+									"
+									type="image/jpg"
+									/>
+									
+									<img src="./images/boxes/codding.jpg"  
+									 alt="Пишем код"  
+									 width="370" />  
+								</picture>
+								
 							</a>
 						</li>
 						<li class="main-list-item">
 							<a class="main-list-item-cont" description="Мобильные приложения" href="">
-								<img src="./images/boxes/adaptation.jpg" alt="Адаптируем" width="370" />
+								<picture>
+									<source media=" (min-width: 1200px) " 
+									srcset="
+									images\boxes\adaptation.jpg  1x,
+									images\boxes\box2@2x-lg.jpg 2x" 
+									type="image/jpg" />
+									<img src="./images/boxes/adaptation.jpg"
+									alt="Адаптируем"
+									width="370" />
+								</picture>
+								
 							</a>
 						</li>
 						<li class="main-list-item">
 							<a class="main-list-item-cont" description="Дизайнерские решения" href="">
-								<img src="./images/boxes/Design.jpg" alt="Делаем дизайн" width="370" />
+								<picture>
+								<source media=" (min-width: 1200px) "
+								srcset="
+								images\boxes\Design.jpg 1x,
+								images\boxes\box3-@2x-lg.jpg 2x"
+								type="image/jpg" />
+								<img src="./images/boxes/Design.jpg" 
+								alt="Делаем дизайн" 
+								width="370" 
+								/>
+								</picture>
 							</a>
 						</li>
 					</ul>
@@ -250,7 +284,31 @@
 					<ul class="list team-list">
 						<li class="team-list-item">
 							<a href="">
-								<img src="./images/workers/ihor.jpg" alt="Игорь Демьяненко" width="270" />
+								<picture>
+								<source	
+								media=" (min-width: 1200px) "
+								srcset="
+								images\workers\ihor-lg.jpg 1x,
+								images\workers\ihor-@2x-lg.jpg 2x"
+								type="image/jpg" />
+								<source
+								media=" (min-width: 768px) "
+								srcset="
+								images\workers\ihor@1x md.jpg 1x,
+								images\workers\ihor-@2x-md.jpg 2x"
+								type="image/jpg" />
+									
+								<source
+								media=" (max-width: 767px) "
+								srcset="
+								images\workers\ihor-@1x-sm.jpg 1x,
+								images\workers\ihor-@2x-sm.jpg 2x"
+								type="image/jpg" />
+									
+								<img src="./images/workers/ihor-lg.jpg" 
+								alt="Игорь Демьяненко" 
+								width="270" />
+								</picture>
 							</a>
 							<div class="demyanenko">
 								<h3 class="title-worker">Игорь Демьяненко</h3>
@@ -290,7 +348,23 @@
 						</li>
 						<li class="team-list-item">
 							<a href="">
-								<img src="./images/workers/olha.jpg" alt="Ольга Репина" width="270" />
+								<picture>
+									<source media=" (min-width: 1200px) " srcset="
+									images\workers\olga-@1x-sm.jpg 1x,
+									images\workers\olga-@2x-sm.jpg 2x" type="image/jpg" />
+									<source media=" (min-width: 768px) " srcset="
+									images\workers\olga-@1x-sm.jpg 1x,
+									images\workers\olga-@2x-sm.jpg 2x" type="image/jpg" />
+									<source media=" (min-width: 768px) " srcset="
+									images\workers\olga-@1x-sm.jpg 1x,
+									images\workers\olga-@2x-sm.jpg 2x" type="image/jpg" />
+									<source media=" (max-width: 767px) " srcset="
+									images\workers\olga-@1x-sm.jpg 1x,
+									images\workers\olga-@2x-sm.jpg 2x" type="image/jpg"/>
+									<img src="./images/workers/olga-lg.jpg" 
+									alt="Ольга Репина"
+									width="270" />
+								</picture>
 							</a>
 							<div class="repina">
 								<h3 class="title-worker">Ольга Репина</h3>
@@ -330,7 +404,21 @@
 						</li>
 						<li class="team-list-item">
 							<a href="">
-								<img src="./images/workers/nikolay.jpg" alt="Николай Тарасов" width="270" />
+								<picture>
+									<source media=" (min-width: 1200px) " srcset="
+									images\workers\nikolay-lg.jpg 1x,
+									images\workers\nickolay-@2x-lg.jpg 2x" type="image/jpg" />
+									<source media=" (min-width: 768px) " srcset="
+									images\workers\nickolay-@1x-md.jpg 1x,
+									images\workers\nickolay@2x md.jpg 2x" type="image/jpg" />
+									<source media=" (max-width: 767px) " srcset="
+									images\workers\nickolay-@1x-sm.jpg 1x,
+									images\workers\nickolay-@2x-sm.jpg 2x" type="image/jpg" />
+									<img src="./images/workers/nikolay-lg.jpg" 
+									alt="Николай Тарасов" 
+									width="270" />
+								</picture>
+								
 							</a>
 							<div class="tarasov">
 								<h3 class="title-worker">Николай Тарасов</h3>
@@ -370,7 +458,22 @@
 						</li>
 						<li class="team-list-item">
 							<a class="workers-img" href="">
-								<img class="" class="" src="./images/workers/mykhail.jpg" alt="Михаил Ермаков" width="270px" />
+								<picture>
+									<source media=" (min-width: 1200px) " srcset="
+									images\workers\mikhail-lg.jpg 1x,
+									images\workers\mikhail-@2x-lg.jpg 2x" type="image/jpg" />
+									<source media=" (min-width: 768px) " srcset="
+									images\workers\mikhail-@1x-md.jpg	 1x,
+									images\workers\mikhail-@2x-md.jpg 2x" type="image/jpg" />
+									<source media=" (max-width: 767px) " srcset="
+									images\workers\mikhail-@1x-sm.jpg 1x,
+									images\workers\mikhail-@2x-sm.jpg 2x" type="image/jpg" />
+									<img class="" 
+									src="./images/workers/mykhail.jpg" 
+									alt="Михаил Ермаков" 
+									width="270px" />
+								</picture>
+								
 							</a>
 							<div class="ermakov">
 								<h3 class="title-worker">Михаил Ермаков</h3>
