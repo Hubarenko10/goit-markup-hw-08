@@ -11,7 +11,7 @@
   @include mq(mobile) {
     margin-bottom: 30px;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     margin-bottom: 30px;
   }
   @include mq(desktop) {
@@ -30,7 +30,7 @@
   @include mq(mobile) {
     display: none;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     display: none;
   }
   @include mq(desktop) {

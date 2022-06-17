@@ -34,7 +34,7 @@
 		margin-bottom: 30px;	
 		width: 100%;
 		}
-	@include mq(tablet){
+	@include mq(tablet-only){
 		margin-right: 30px;
 		width: 354px;
 		&:nth-child(-n + 2) {
@@ -52,7 +52,7 @@
 		width: 100%;
 		align-items: center;
 		}
-	@include mq(tablet) {
+	@include mq(tablet-only	) {
 		width: 100%;
 	}
 	

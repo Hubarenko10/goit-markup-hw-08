@@ -3,7 +3,7 @@
 }
 
 .header__box {
-  @include mq(tablet){
+  @include mq(tablet-only){
     display: flex;
       align-items: center;
   }
@@ -31,12 +31,12 @@
     align-items: center;
     justify-content: center;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     display: flex;
-    padding-bottom: 0;
+    padding:0;
   }
   @include mq(desktop) {
-    padding-top: 0;
+    padding:0;
     width: auto;
     display: flex;
   }
@@ -55,7 +55,7 @@
   @include mq(mobile) {
     margin-right: auto;
   }
-  @include mq(tablet){
+  @include mq(tablet-only){
     margin-right: 90px;
   }
   @include mq(desktop) {
@@ -73,7 +73,7 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -100,14 +100,14 @@
   @include mq(mobile) {
     display: none;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     margin-right: 85px;
-    padding: 0;
+    padding:0;
     display: flex;
   }
   @include mq(desktop) {
@@ -176,7 +176,7 @@
   @include mq(mobile-only) {
     display: none;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     display: block;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -192,7 +192,7 @@
 }
 
 .contact__item {
-  @include mq(tablet){
+  @include mq(tablet-only){
     &:not(:last-child){
       margin-bottom: 10px;
     }
