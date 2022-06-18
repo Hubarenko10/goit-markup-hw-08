@@ -3,42 +3,42 @@
     padding-top: 100px;
     padding-bottom: 100px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../');
+      url('../images/bg-sm@1x.jpg');
 
     @include mq(retina) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./images/bg-sm@2x.jpg);
+        url(../images/bg-sm@2x.jpg);
     }
   }
   @include mq(mobile) {
     padding-top: 120px;
     padding-bottom: 120px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../images/bg-sm@1x.jpg);
+      url(../images/bg-sm@1x.jpg);
 
     @include mq(retina) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../../images/bg-sm@2x.jpg);
+        url(../images/bg-sm@2x.jpg);
     }
   }
   @include mq(tablet-only) {
     padding-top: 120px;
     padding-bottom: 120px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../images/bg-md@1x.jpg);
+      url(../images/bg-md@1x.jpg);
     @include mq(retina) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../../images/bg-md@2x.jpg);
+        url(../images/bg-md@2x.jpg);
     }
   }
   @include mq(desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../images/bg-lg@1x.jpg);
+      url(../images/bg-lg@1x.jpg);
     @include mq(retina) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../../images/bg-lg@2x.jpg);
+        url(../images/bg-lg@2x.jpg);
     }
   }
   background-color: var(--backround-color);
