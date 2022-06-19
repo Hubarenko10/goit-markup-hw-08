@@ -1,6 +1,18 @@
+.our-team-title{
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 .our-team {
   background-color: rgba(245, 244, 250, 1);
   @include mq(mobile-only) {
+    padding-top: 60px;
+  }
+  @include mq(tablet-only){
     padding-top: 60px;
   }
   padding-top: 94px;

@@ -13,11 +13,11 @@ ul {
 a {
   color: var(--accent-color);
   @include mq(tablet) {
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
   }
 
   @include mq(desktop) {
-    color: var(--primary-text-color);
+   color: var(--primary-text-color);
   }
   text-decoration: none;
 }

@@ -5,7 +5,7 @@ body {
 .section {
     @include mq(mobile-only) {
             padding-top: 60px;
-                padding-bottom: 60px;
+            padding-bottom: 60px;
         }
     @include mq(mobile) {
             padding-top: 60px;
@@ -18,8 +18,8 @@ body {
         }
     
         @include mq(desktop) {
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding-top: 94px;
+            padding-bottom: 94px;
         }
   
     

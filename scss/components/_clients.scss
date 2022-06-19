@@ -17,6 +17,13 @@
   }
   @include mq(tablet-only) {
     margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
   @include mq(desktop) {
     margin-bottom: 50px;
@@ -45,10 +52,10 @@
 .client-list-item {
   @include mq(mobile-only) {
     width: calc(50% - 15px);
-    &:nth-child(2n+1){
+    &:nth-child(2n + 1) {
       margin-right: 30px;
     }
-    &:nth-child(-n+4){
+    &:nth-child(-n + 4) {
       margin-bottom: 30px;
     }
   }
@@ -74,6 +81,13 @@
     }
     &:nth-child(4) {
       margin-right: 30px;
+      margin-bottom: 0;
+    }
+    &:nth-child(5) {
+      margin-bottom: 0;
+    }
+    &:nth-child(6) {
+      margin-bottom: 0;
     }
   }
   @include mq(desktop) {
